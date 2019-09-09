@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="subject1" class="com.springboot.Subject">
+		<property name="subjectID" value="111"></property>
+		<property name="subtitle" value="Science"></property>
+		<property name="duratioHours" value="11"></property>
+		<property name="reference" ref="book1"></property>
+	</bean>
+	<bean id="subject2" class="com.springboot.Subject">
+		<property name="subjectID" value="222"></property>
+		<property name="subtitle" value="Biology"></property>
+		<property name="duratioHours" value="22"></property>
+		<property name="reference" ref="book2"></property>
+	</bean>
+	<bean id="subject3" class="com.springboot.Subject">
+		<property name="subjectID" value="333"></property>
+		<property name="subtitle" value="History"></property>
+		<property name="duratioHours" value="33"></property>
+		<property name="reference" ref="book3"></property>
+	</bean>
+	
+
+	<bean id="book1" class="com.springboot.Book">
+		<property name="bookID" value="100"></property>
+		<property name="title" value="Book100"></property>
+		<property name="price" value="100.50"></property>
+		<property name="valume" value="1000"></property>
+		<property name="publishDate" value="11/01/1980"></property>
+	</bean>
+	<bean id="book2" class="com.springboot.Book">
+		<property name="bookID" value="200"></property>
+		<property name="title" value="Book200"></property>
+		<property name="price" value="200.50"></property>
+		<property name="valume" value="2000"></property>
+		<property name="publishDate" value="10/02/1988"></property>
+	</bean>
+	<bean id="book3" class="com.springboot.Book">
+		<property name="bookID" value="300"></property>
+		<property name="title" value="Book300"></property>
+		<property name="price" value="300.50"></property>
+		<property name="valume" value="3000"></property>
+		<property name="publishDate" value="09/03/1990"></property>
+	</bean>
+
+	<bean id="list1" class="java.util.ArrayList"></bean>
+	<bean id="hashSet1" class="java.util.HashSet"></bean>
+
+</beans>
